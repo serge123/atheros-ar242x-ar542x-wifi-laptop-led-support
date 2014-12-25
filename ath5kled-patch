@@ -1,0 +1,12 @@
+diff -Naur olddrivers/net/wireless/ath/ath5k/led.c drivers/net/wireless/ath/ath5k/led.c
+--- olddrivers/net/wireless/ath/ath5k/led.c	2011-05-19 13:06:34.000000000 +0900
++++ drivers/net/wireless/ath/ath5k/led.c	2011-08-24 22:39:04.000000000 +0900
+@@ -83,6 +83,8 @@
+ 	{ PCI_VDEVICE(ATHEROS, PCI_DEVICE_ID_ATHEROS_AR5212_IBM), ATH_LED(0, 0) },
+ 	/* Dell Vostro A860 (shahar@shahar-or.co.il) */
+ 	{ ATH_SDEVICE(PCI_VENDOR_ID_QMI, 0x0112), ATH_LED(3, 0) },
++	/* AR242x AR542x */
++	{ PCI_VDEVICE(ATHEROS, PCI_DEVICE_ID_ATHEROS_AR5424), ATH_LED(3, 0) },
+ 	{ }
+ };
+
